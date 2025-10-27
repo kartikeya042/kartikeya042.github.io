@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Snake Game</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: sans-serif;
+    }
+
+    .font-permanent {
+      font-family: "Permanent Marker", cursive;
+    }
+  </style>
+</head>
+
+<body class="bg-gray-400 text-white min-h-screen flex items-center justify-center p-4">
+  <div id="gameContainer" class="text-center flex flex-col items-center space-y-4 w-full max-w-md">
+    <canvas id="gameBoard" width="500" height="500"
+      class="border-4 border-black w-full max-w-full h-auto rounded-lg"></canvas>
+
+    <div id="scoreText" class="font-permanent text-[100px] text-green-600">0</div>
+
+    <div class="flex space-x-4">
+      <button id="startBtn"
+        class="font-permanent text-[18px] w-[100px] h-[50px] break-words border-[3px] border-black rounded-[15px] cursor-pointer bg-green-600 hover:bg-green-700 text-white">
+        Start
+      </button>
+      <button id="resetBtn"
+        class="font-permanent text-[18px] w-[100px] h-[50px] break-words border-[3px] border-black rounded-[15px] cursor-pointer bg-red-600 hover:bg-red-700 text-white">
+        Reset
+      </button>
+      <button id="goBack" onclick="goBack()"
+        class="font-permanent text-[18px] w-[150px] h-[50px] break-words border-[3px] border-black rounded-[15px] cursor-pointer bg-yellow-500 hover:bg-yellow-600 text-white">
+        Back to Menu
+      </button>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+
+</html>
