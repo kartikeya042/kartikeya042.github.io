@@ -1,0 +1,54 @@
+/* Make body and html take full height */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black; /* Optional fallback */
+}
+
+/* Center game container vertically and horizontally */
+#gameContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+/* Canvas styling */
+#board {
+    background-image: url(./flappybirdbg.png);
+    background-size: cover;
+    background-position: center;
+    border: 4px solid black;
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Back button styling */
+.back-button {
+    font-family: "Permanent Marker", cursive;
+    font-size: 18px;
+    width: 150px;
+    height: 50px;
+    word-wrap: break-word;
+    border: 3px solid black;
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: #fbbf24;
+    color: white;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #facc15;
+    color: black;
+}
